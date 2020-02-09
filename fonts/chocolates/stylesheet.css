@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Regular.eot');
+    src: local('☞TT Chocolates Condensed Regular'), local('TTChocolatesCondensed-Regular'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Regular.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Regular.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Light.eot');
+    src: local('☞TT Chocolates Condensed Light'), local('TTChocolatesCondensed-Light'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Light.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Light.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Bold.eot');
+    src: local('☞TT Chocolates Condensed Bold'), local('TTChocolatesCondensed-Bold'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Bold.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Bold.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BoldItalic.eot');
+    src: local('☞TT Chocolates Condensed Bold Italic'), local('TTChocolatesCondensed-BoldItalic'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BoldItalic.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BoldItalic.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Black.eot');
+    src: local('☞TT Chocolates Condensed Black'), local('TTChocolatesCondensed-Black'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Black.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Black.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-LightItalic.eot');
+    src: local('☞TT Chocolates Condensed Light Italic'), local('TTChocolatesCondensed-LightItalic'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-LightItalic.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-LightItalic.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-ThinItalic.eot');
+    src: local('☞TT Chocolates Condensed Thin Italic'), local('TTChocolatesCondensed-ThinItalic'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-ThinItalic.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-ThinItalic.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BlackItalic.eot');
+    src: local('☞TT Chocolates Condensed Black Italic'), local('TTChocolatesCondensed-BlackItalic'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BlackItalic.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BlackItalic.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Thin.eot');
+    src: local('☞TT Chocolates Condensed Thin'), local('TTChocolatesCondensed-Thin'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Thin.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Thin.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTChocolatesCondensed';
+    src: url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Italic.eot');
+    src: local('☞TT Chocolates Condensed Italic'), local('TTChocolatesCondensed-Italic'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Italic.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Italic.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/chocolates/TTChocolatesCondensed-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

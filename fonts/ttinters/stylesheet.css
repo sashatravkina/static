@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'TT Inters';
+    src: url('TTInters.eot');
+    src: local('TT Inters'), local('TTInters'),
+        url('https://sashatravkina.github.io/static/fonts/ttlimes/TTInters.eot?#iefix') format('embedded-opentype'),
+        url('https://sashatravkina.github.io/static/fonts/ttlimes/TTInters.woff2') format('woff2'),
+        url('https://sashatravkina.github.io/static/fonts/ttlimes/TTInters.woff') format('woff'),
+        url('https://sashatravkina.github.io/static/fonts/ttlimes/TTInters.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

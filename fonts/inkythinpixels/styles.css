@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'InkyThinPixels';
+  src: 
+  url('https://sashatravkina.github.io/static/fonts/inkythinpixels/InkyThinPixels.eot?#iefix') format('embedded-opentype'),
+  url('https://sashatravkina.github.io/static/fonts/inkythinpixels/InkyThinPixels.woff') format('woff'),
+  url('https://sashatravkina.github.io/static/fonts/inkythinpixels/InkyThinPixels.ttf') format('truetype'),
+  url('https://sashatravkina.github.io/static/fonts/inkythinpixels/InkyThinPixels.svg#InkyThinPixels') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
