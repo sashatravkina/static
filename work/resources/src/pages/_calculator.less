@@ -1,0 +1,123 @@
+.page-calculator {
+    .header {
+        background-color: @color1;
+
+        &::before {
+            content: none;
+        }
+
+        .menu {
+            .item {
+                a {
+                    color: @color4;
+
+                    &:hover {
+                        color: @color7;
+                    }
+                }
+            }
+        }
+        .nav-toggle { 
+            .nav-toggle-bar {
+                background: @color4;
+
+                &::after, &::before {
+                    background: @color4;
+                }
+            }
+            &.expanded {
+                .nav-toggle-bar {
+                    background: transparent;
+                }
+            }
+        }
+
+        .stars {
+            .star-1 {
+                position: absolute;
+                min-width: 250px;
+                width: 20vw;
+                bottom: -7%;
+                left: -7%;
+            }
+            .star-2 {
+                position: absolute;
+                width: 10vw;
+                left: 5%;
+                top: 11%;
+            }
+            .star-3 {
+                position: absolute;
+                min-width: 200px;
+                width: 15vw;
+                right: -7%;
+                top: 12%;
+            }
+        }
+    }
+}
+
+.header {
+    .losses {
+        position: relative;
+        z-index: -40;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: @color4;
+            z-index: -50;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 50%;
+        }
+
+        .wrapper {
+            max-width: @post;
+        }
+    
+        .item {
+            background-color: @color4;
+            border: 1px solid rgb(51, 51, 51);
+            border-radius: 4px;
+            text-align: center;
+    
+            .title {
+                margin-bottom: 32px;
+                margin-top: 0;
+
+                p {
+                    margin-bottom: 0;
+                    margin-top: 0;
+    
+                    font-size: 2.75em;
+                    line-height: 56px;
+                    color: @color9;
+    
+                    @media @md {
+                        font-size: 3.75em;
+                    }
+                }
+            }
+            .description {
+                margin-bottom: 0;
+                margin-top: 32px;
+    
+                p {
+                    margin-bottom: 0;
+                    margin-top: 0;
+
+                    a {
+                        text-decoration: none;
+                        color: @color9;
+    
+                        &:hover {
+                            color: @color17;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
