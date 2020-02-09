@@ -25,6 +25,8 @@
 
         .digital-protect__list {
             margin-bottom: 32px;
+            margin-right: -4px;
+            margin-left: -4px;
             line-height: 1.5;
             font-size: 1em;
             color: @color2;
@@ -47,6 +49,9 @@
             }
 
             label {
+                padding-right: 4px;
+                padding-left: 4px;
+
                 position: relative;
                 overflow: hidden;
                 cursor: pointer;
@@ -136,20 +141,19 @@
     .images {
         position: absolute;
         z-index: -10;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        top: 0;
+        bottom: 32px;
+        width: 100%;
+        top: -72px;
 
         .digital-protect__img {
             position: absolute;
-            height: 100%;
+            min-height: 360px;
+            height: 25vw;
+            max-height: 513px;
+            bottom: 0;
+            right: 0;
+            left: 0;
             width: 100%;
-            height: 28vw;
-            bottom: 32px;
-            left: 60%;
-            left: 60vw;
-            /* top: -72px; */
 
             .js-img {
                 transition: .5s ease-out;
@@ -202,7 +206,7 @@
             .star-4 {
                 position: absolute;
                 bottom: 20px;
-                left: 340px;
+                left: 390px;
 
                 svg {
                     fill: @color2;
@@ -491,7 +495,25 @@
 }
 
 .section-3 {
-    background-color: @color12;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: @color12;
+        z-index: -100;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+
+        @media @xxl {
+            max-width: ~'calc('@wrapper ~'+ 64px + 64px)';
+            right: ~'calc(50% - (('@wrapper ~'+ 64px + 64px) / 2))';
+            left: ~'calc(50% - (('@wrapper ~'+ 64px + 64px) / 2))';
+        }
+    }
 
     .item {
         h2 {

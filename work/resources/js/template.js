@@ -2,6 +2,7 @@ $(document).ready(function() {
     window.scrollTo(window.scrollX, window.scrollY - 1);
 }); 
 
+/* 
 $(document).ready(function() { 
 	var hamburger = {
 		navToggle: document.querySelector('.nav-toggle'),
@@ -17,6 +18,7 @@ $(document).ready(function() {
         hamburger.doToggle(e);
     });
 }());
+*/
 
 $(document).ready(function() {
     tocbot.init({
@@ -139,11 +141,11 @@ $(document).ready(function(){
 
 $(function(){
     $('#verticalCarousel1').carousel({
-        interval: 7000  
+        interval: 3000  
     })
 
     $('#verticalCarousel2').carousel({
-        interval: 8000  
+        interval: 4000  
     })
 });
 
