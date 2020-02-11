@@ -732,6 +732,7 @@
                     text-decoration: none;
                     border-radius: 4px;
                     font-size: 1.125em;
+                    position: relative;
                     color: @color4;
 
                     display: block;
@@ -739,6 +740,18 @@
                     &.active {
                         background-color: @color4;
                         color: @color2;
+                    }
+                    &.border {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            border: 1px solid @color4;
+                            border-radius: 4px;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            top: 0;
+                        }
                     }
                 }
             }
