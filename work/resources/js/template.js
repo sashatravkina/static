@@ -2,7 +2,20 @@ $(document).ready(function() {
     window.scrollTo(window.scrollX, window.scrollY - 1);
 });
 
-$(function(){
+$(document).ready(function() {
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.js-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.article .wrapper',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: '.toc-header',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: false,
+    });
+});
+
+$(document).ready(function() { 
     var $window = $(window);  
     var $sidebar = $(".toc"); 
     var $sidebarHeight = $sidebar.innerHeight();   
@@ -62,19 +75,6 @@ $(document).ready(function() {
     });
 }());
 */
-
-$(document).ready(function() {
-    tocbot.init({
-        // Where to render the table of contents.
-        tocSelector: '.js-toc',
-        // Where to grab the headings to build the table of contents.
-        contentSelector: '.article .wrapper',
-        // Which headings to grab inside of the contentSelector element.
-        headingSelector: '.toc-header',
-        // For headings inside relative or absolute positioned containers within content.
-        hasInnerContainers: false,
-    });
-});
 
 $(function() {
     const radioList = document.querySelector(".digital-protect__list"),
