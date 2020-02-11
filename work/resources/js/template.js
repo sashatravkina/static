@@ -2,18 +2,15 @@ $(document).ready(function() {
     window.scrollTo(window.scrollX, window.scrollY - 1);
 });
 
-$(document).ready(function() {
+$(function() {
     tocbot.init({
-        // Where to render the table of contents.
         tocSelector: '.js-toc',
-        // Where to grab the headings to build the table of contents.
         contentSelector: '.article .wrapper',
-        // Which headings to grab inside of the contentSelector element.
         headingSelector: '.toc-header',
-        // For headings inside relative or absolute positioned containers within content.
-        hasInnerContainers: false,
+        includeHtml: true,
     });
 });
+
 
 $(document).ready(function() { 
     var $window = $(window);  
@@ -37,6 +34,7 @@ $(document).ready(function() {
         }
     });  
 });
+
 
 $(function() {
     $(".information-blocks .item-1 .button").click(function() {

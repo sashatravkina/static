@@ -148,6 +148,7 @@
 .article {
     .wrapper {
         position: relative;
+        overflow: hidden;
 
         & > :first-child {
             margin-top: 0;
@@ -168,6 +169,10 @@
             line-height: 1.2;
             font-weight: bold;
             font-size: 1.5em;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
 
             @media @md {
                 line-height: 1.4;
@@ -1049,17 +1054,14 @@
         .anchor {
             position: absolute;
             visibility: hidden;
+            margin-top: -24px;
             line-height: 0;
             font-size: 0;
-            height: 0;
+            height: 24px;
             width: 0;
 
-            &::before {
-                display: block;
-                content: " ";
-                height: 60px;
-                margin-top: -60px;
-                visibility: hidden;
+            &.ended {
+                margin-top: 64px;
             }
         }
     }
