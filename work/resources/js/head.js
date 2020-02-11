@@ -1,8 +1,8 @@
-$(document).ready(function() { 
+$(window).on('load', function() {
     window.scrollTo(window.scrollX, window.scrollY - 1);
 });
 
-$(function() {
+$(window).on('load', function() {
     tocbot.init({
         tocSelector: '.js-toc',
         contentSelector: '.article .wrapper',
@@ -11,7 +11,7 @@ $(function() {
     });
 });
 
-$(function() {
+$(window).on('load', function() {
     var $window = $(window);  
     var $sidebar = $(".toc"); 
     var $sidebarHeight = $sidebar.innerHeight();   
