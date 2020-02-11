@@ -13,12 +13,14 @@
     background: @color6;
     color: @color4;
 }
+*:hover, :hover {
+    transition: none !important;
+}
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     scroll-behavior: auto;
     overflow-x: hidden;
     min-width: 320px;
-    width: 100vw;
 }
 html, body, div, form, pre, span, tr, th, td, img {
     vertical-align: middle;
@@ -68,10 +70,6 @@ img {
 a {
     transition: color .3s ease;
     cursor: pointer;
-
-    &:hover {
-        transition: none;
-    }
 }
 section {
     position: relative;
@@ -87,7 +85,7 @@ section {
 /* Header */
 
 .header {
-    background: rgba(255, 255, 255, 0.9);
+    background: fade(@color4, 90%);
     position: relative;
     overflow: hidden;
     z-index: 1000;
@@ -132,12 +130,11 @@ section {
             font-weight: 500;
             line-height: 40px;
 
-            background-color: rgba(7, 78, 245, 0.9);
+            background-color: fade(@color2, 90%);
             color: @color4;
 
             &:hover {
-                background-color: rgba(98, 144, 252, 0.9);
-                transition: none;
+                background-color: fade(@color3, 90%);
             }
 
             @media @mlg {
@@ -183,8 +180,7 @@ section {
             top: 50%;
 
             &::after, &::before {
-                position: absolute;
-                top: 50%;
+                content: '';
                 -webkit-transform: translateY(-50%);
                 -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
@@ -193,10 +189,11 @@ section {
                 -ms-transition: all 0.5s ease;
                 -o-transition: all 0.5s ease;
                 transition: all 0.5s ease;
+                position: absolute;
                 background: @color1;
                 height: 2px;
                 width: 100%;
-                content: '';
+                top: 50%;
             }
             &::after {
                 margin-top: 5px;
@@ -298,12 +295,11 @@ section {
                     font-weight: 500;
                     line-height: 40px;
         
-                    background-color: rgba(7, 78, 245, 0.9);
+                    background-color: fade(@color2, 90%);
                     color: @color4;
         
                     &:hover {
-                        background-color: rgba(98, 144, 252, 0.9);
-                        transition: none;
+                        background-color: fade(@color3, 90%);
                     }
                 }
             }
@@ -426,7 +422,6 @@ section {
 
             &:hover {
                 background-color: @color6;
-                transition: none;
             }
 
             @media @mmd {
@@ -628,17 +623,12 @@ section {
             a {
                 -webkit-transition: color .3s ease, border-color .3s ease;
                 transition: color .3s ease, border-color .3s ease;
-                border-bottom: 1px solid rgba(7, 78, 242, 0.4);
+                border-bottom: 1px solid fade(@color13, 40%);
                 text-decoration: none;
                 color: @color2;
 
                 &:hover {
-                    transition: none;
-                    color: @color9;
-                }
-
-                &:hover {
-                    border-color: rgba(245, 93, 42, 0.4);
+                    border-color: fade(@color9, 40%);
                     color: @color9;
                 }
             }

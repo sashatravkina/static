@@ -1,4 +1,4 @@
-.section-1 {
+.index-1 {
     .title {
         margin-bottom: 24px;
         max-width: 640px;
@@ -231,7 +231,7 @@
     }
 }
 
-.section-2 {
+.index-2 {
     .block {
         border: 1px solid @color2;
         border-radius: 8px;
@@ -283,10 +283,6 @@
                             -webkit-transition: fill .3s ease-out;
                             transition: fill .3s ease-out;
                         }
-                    }
-
-                    &:hover {
-                        transition: none;
                     }
                 }
 
@@ -494,7 +490,7 @@
     }
 }
 
-.section-3 {
+.index-3 {
     position: relative;
 
     &::before {
@@ -578,7 +574,7 @@
     }
 }
 
-.section-4 {
+.index-4 {
     .information-list {
         .head {
             margin-bottom: 32px;
@@ -659,17 +655,16 @@
                         a {
                             -webkit-transition: color .3s ease-out, border-color .3s ease-out;
                             transition: color .3s ease-out, border-color .3s ease-out;
-                            border-bottom: 1px solid rgba(7, 78, 242, 0.4);
+                            border-bottom: 1px solid fade(@color13, 40%);
                             text-decoration: none;
                             color: @color2;
             
                             &:hover {
-                                transition: none;
                                 color: @color9;
                             }
             
                             &:hover {
-                                border-color: rgba(245, 93, 42, 0.4);
+                                border-color: fade(@color9, 40%);
                                 color: @color9;
                             }
                         }
@@ -741,10 +736,6 @@
                         background-color: @color4;
                         color: @color2;
                     }
-
-                    &:hover {
-                        transition: none;
-                    }
                 }
             }
             .div-4 {
@@ -787,7 +778,6 @@
 
                     &:hover {
                         background-color: @color7;
-                        transition: none;
                     }
                 }
             }
@@ -858,7 +848,6 @@
                     }
 
                     &:hover {
-                        transition: none;
                         background-color: @color6;
                         color: @color4;
                     }
