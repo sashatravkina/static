@@ -321,13 +321,15 @@
                 .carousel.vertical .carousel-inner {
                     position: relative;
                     overflow: hidden;
-                    width: 100%;
                 }
                 .carousel.vertical .carousel-inner > .item {
-                    -webkit-transition: top 0.6s ease-in-out;
-                    transition: top 0.6s ease-in-out;
+                    -webkit-transition: top 0.4s ease-in-out;
+                    transition: top 0.4s ease-in-out;
+                    background-color: @color4;
                     position: relative;
+                    overflow: hidden;
                     display: none;
+                    height: 100%;
                 }
                 .carousel.vertical .carousel-inner > .item > img,
                 .carousel.vertical .carousel-inner > .item > a > img {
@@ -335,10 +337,10 @@
                 }
                 @media all and (transform-3d), (-webkit-transform-3d) {
                     .carousel.vertical .carousel-inner > .item {
-                        -webkit-transition: -webkit-transform 0.6s ease-in-out;
-                        transition: -webkit-transform 0.6s ease-in-out;
-                        transition: transform 0.6s ease-in-out;
-                        transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+                        -webkit-transition: -webkit-transform 0.4s ease-in-out;
+                        transition: -webkit-transform 0.4s ease-in-out;
+                        transition: transform 0.4s ease-in-out;
+                        transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
                         -webkit-backface-visibility: hidden;
                         backface-visibility: hidden;
                         -webkit-perspective: 1000;
@@ -497,6 +499,7 @@
         content: '';
         position: absolute;
         background-color: @color12;
+        border-radius: 4px;
         z-index: -100;
         width: 100%;
         bottom: 0;
@@ -782,7 +785,6 @@
                     transition: background-color .3s ease-out;
                     text-decoration: none;
                     background-color: @color4;
-                    font-family: @sans-serif;
                     text-align: center;
                     border-radius: 4px;
                     font-size: 1em;
@@ -859,7 +861,6 @@
                     transition: background-color .3s ease-out, color .3s ease-out;
                     text-decoration: none;
                     background-color: @color2;
-                    font-family: @sans-serif;
                     text-align: center;
                     border-radius: 4px;
                     cursor: pointer;
