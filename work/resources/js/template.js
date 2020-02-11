@@ -1,6 +1,26 @@
 $(document).ready(function() { 
     window.scrollTo(window.scrollX, window.scrollY - 1);
-}); 
+});
+
+$(function() {
+    $(".information-blocks .item-1 .button").click(function() {
+        $('.information-blocks .item-1 .section-2').addClass("active");
+        $('.information-blocks .item-1 .section-2').removeClass("hidden");
+
+        $('.information-blocks .item-1 .section-1').addClass("hidden");
+        $('.information-blocks .item-1 .section-1').removeClass("active");
+    });
+});
+
+$(function() {
+    $(".information-blocks .item-2 .button").click(function() {
+        $('.information-blocks .item-2 .section-2').addClass("active");
+        $('.information-blocks .item-2 .section-2').removeClass("hidden");
+
+        $('.information-blocks .item-2 .section-1').addClass("hidden");
+        $('.information-blocks .item-2 .section-1').removeClass("active");
+    });
+});
 
 /* 
 $(document).ready(function() { 
@@ -118,23 +138,64 @@ $(document).ready(function(){
             $('.header-form .check').addClass('checked');
             $('.header-form .uncheck').addClass('unchecked');
             $('.header-form .load-button').addClass('button-red');
+            $('.header-form .checkbox').addClass('checked');
         }
         else if($(this).is(":not(:checked)")){
             $('.header-form .check').removeClass('checked');
             $('.header-form .uncheck').removeClass('unchecked');
             $('.header-form .load-button').removeClass('button-red');
+            $('.header-form .checkbox').removeClass('checked');
         }
     });
-    $('#protect-footer-checkbox').click(function(){
+});
+
+$(document).ready(function(){
+    $('#protect-checkbox-footer').click(function(){
         if($(this).is(":checked")){
             $('.footer-form .check').addClass('checked');
             $('.footer-form .uncheck').addClass('unchecked');
             $('.footer-form .load-button').addClass('button-red');
+            $('.footer-form .checkbox').addClass('checked');
         }
         else if($(this).is(":not(:checked)")){
             $('.footer-form .check').removeClass('checked');
             $('.footer-form .uncheck').removeClass('unchecked');
             $('.footer-form .load-button').removeClass('button-red');
+            $('.footer-form .checkbox').removeClass('checked');
+        }
+    });
+});
+
+$(document).ready(function(){
+    $('#protect-checkbox-ddos1').click(function(){
+        if($(this).is(":checked")){
+            $('.ddos1-form .check').addClass('checked');
+            $('.ddos1-form .uncheck').addClass('unchecked');
+            $('.ddos1-form .load-button').addClass('button-red');
+            $('.ddos1-form .checkbox').addClass('checked');
+        }
+        else if($(this).is(":not(:checked)")){
+            $('.ddos1-form .check').removeClass('checked');
+            $('.ddos1-form .uncheck').removeClass('unchecked');
+            $('.ddos1-form .load-button').removeClass('button-red');
+            $('.ddos1-form .checkbox').removeClass('checked');
+        }
+    });
+});
+
+$(document).ready(function(){
+    $('#protect-checkbox-ddos2').click(function(){
+        if($(this).is(":checked")){
+            $('.ddos2-form .check').addClass('checked');
+            $('.ddos2-form .uncheck').addClass('unchecked');
+            $('.ddos2-form .load-button').addClass('button-red');
+            $('.ddos2-form .checkbox').addClass('checked');
+        }
+        else if($(this).is(":not(:checked)")){
+            $('.ddos2-form .check').removeClass('checked');
+            $('.ddos2-form .uncheck').removeClass('unchecked');
+            $('.ddos2-form .load-button').removeClass('button-red');
+            $('.ddos2-form .checkbox').removeClass('checked');
         }
     });
 });
