@@ -1,23 +1,198 @@
 @font-face {
-    font-family: 'Fontatica4F';
-    src: url('../fonts/fontatica/Fontatica4F.eot');
-    src: local('☞Fontatica 4F'), local('Fontatica4F'),
-        url('../fonts/fontatica/Fontatica4F.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fontatica/Fontatica4F.woff2') format('woff2'),
-        url('../fonts/fontatica/Fontatica4F.woff') format('woff'),
-        url('../fonts/fontatica/Fontatica4F.ttf') format('truetype');
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-ThinItalic.eot');
+    src: local('Klein Condensed Thin Italic'), local('KleinCondensed-ThinItalic'),
+        url('../fonts/klein/KleinCondensed-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-ThinItalic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-ThinItalic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-Black.eot');
+    src: local('Klein Condensed Black'), local('KleinCondensed-Black'),
+        url('../fonts/klein/KleinCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-Black.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-Black.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-MediumItalic.eot');
+    src: local('Klein Condensed Medium Italic'), local('KleinCondensed-MediumItalic'),
+        url('../fonts/klein/KleinCondensed-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-MediumItalic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-MediumItalic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-Bold.eot');
+    src: local('Klein Condensed Bold'), local('KleinCondensed-Bold'),
+        url('../fonts/klein/KleinCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-Bold.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-BlackItalic.eot');
+    src: local('Klein Condensed Black Italic'), local('KleinCondensed-BlackItalic'),
+        url('../fonts/klein/KleinCondensed-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-BlackItalic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-BlackItalic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-ExtraLight.eot');
+    src: local('Klein Condensed ExtraLight'), local('KleinCondensed-ExtraLight'),
+        url('../fonts/klein/KleinCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-ExtraLight.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-ExtraLight.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-Italic.eot');
+    src: local('Klein Condensed Italic'), local('KleinCondensed-Italic'),
+        url('../fonts/klein/KleinCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-Italic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-Italic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-Medium.eot');
+    src: local('Klein Condensed Medium'), local('KleinCondensed-Medium'),
+        url('../fonts/klein/KleinCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-Medium.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-Medium.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-Thin.eot');
+    src: local('Klein Condensed Thin'), local('KleinCondensed-Thin'),
+        url('../fonts/klein/KleinCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-Thin.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-Thin.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-Regular.eot');
+    src: local('Klein Condensed Regular'), local('KleinCondensed-Regular'),
+        url('../fonts/klein/KleinCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-Regular.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'Fontatica4F';
-    src: url('../fonts/fontatica/Fontatica4F-Italic.eot');
-    src: local('☞Fontatica 4F Italic'), local('Fontatica4F-Italic'),
-        url('../fonts/fontatica/Fontatica4F-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fontatica/Fontatica4F-Italic.woff2') format('woff2'),
-        url('../fonts/fontatica/Fontatica4F-Italic.woff') format('woff'),
-        url('../fonts/fontatica/Fontatica4F-Italic.ttf') format('truetype');
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-LightItalic.eot');
+    src: local('Klein Condensed Light Italic'), local('KleinCondensed-LightItalic'),
+        url('../fonts/klein/KleinCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-LightItalic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-LightItalic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-Light.eot');
+    src: local('Klein Condensed Light'), local('KleinCondensed-Light'),
+        url('../fonts/klein/KleinCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-Light.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-Light.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-ExtraLightItalic.eot');
+    src: local('Klein Condensed ExtraLight Italic'), local('KleinCondensed-ExtraLightItalic'),
+        url('../fonts/klein/KleinCondensed-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-ExtraBold.eot');
+    src: local('Klein Condensed ExtraBold'), local('KleinCondensed-ExtraBold'),
+        url('../fonts/klein/KleinCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-ExtraBold.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-ExtraBold.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-ExtraBoldItalic.eot');
+    src: local('Klein Condensed ExtraBold Italic'), local('KleinCondensed-ExtraBoldItalic'),
+        url('../fonts/klein/KleinCondensed-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Klein Condensed';
+    src: url('../fonts/klein/KleinCondensed-BoldItalic.eot');
+    src: local('Klein Condensed Bold Italic'), local('KleinCondensed-BoldItalic'),
+        url('../fonts/klein/KleinCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-BoldItalic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-BoldItalic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Klein Condensed Book';
+    src: url('../fonts/klein/KleinCondensed-Book.eot');
+    src: local('Klein Condensed Book'), local('KleinCondensed-Book'),
+        url('../fonts/klein/KleinCondensed-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-Book.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-Book.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klein Condensed Book';
+    src: url('../fonts/klein/KleinCondensed-BookItalic.eot');
+    src: local('Klein Condensed Book Italic'), local('KleinCondensed-BookItalic'),
+        url('../fonts/klein/KleinCondensed-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/klein/KleinCondensed-BookItalic.woff2') format('woff2'),
+        url('../fonts/klein/KleinCondensed-BookItalic.woff') format('woff'),
+        url('../fonts/klein/KleinCondensed-BookItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
