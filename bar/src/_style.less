@@ -15,16 +15,58 @@ body {
     position: relative;
     margin: 5px auto 0;
     max-width: 1040px;
-    border-radius: 50px;
-    overflow: hidden;
     height: 48px;
+
+    &::before {
+        content: '';
+        border-left: 48px solid transparent;
+        border-top: 48px solid #5d6872;
+        position: absolute;
+        height: 0;
+        width: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: '';
+        border-right: 48px solid transparent;
+        border-top: 48px solid #5d6872;
+        position: absolute;
+        height: 0;
+        width: 0;
+        right: 0;
+    }
+
+    .frame {
+        max-width: 1040px;
+        position: absolute;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 48px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+
+        &::before {
+            content: '';
+            background-color: #5d6872;
+            position: absolute;
+            max-width: 944px;
+            margin: 0 auto;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+    }
 
     .liquid {
         position: absolute;
-        background: #5d6872;
         height: 1040px;
         width: 1040px;
         top: -520px;
+        right: 0;
         left: 0;
     }
     
