@@ -19,24 +19,24 @@ body {
 
     &::before {
         content: '';
-        border-bottom: 24px solid transparent;
-        border-right: 48px solid #5d6872;
-        border-top: 24px solid transparent;
+        border-radius: 50px 0 0 50px;
+        background-color: #5d6872;
         position: absolute;
-        height: 0;
-        width: 0;
+        width: 48px;
+        bottom: 0;
         left: 0;
+        top: 0;
     }
 
     &::after {
         content: '';
-        border-bottom: 24px solid transparent;
-        border-left: 48px solid #5d6872;
-        border-top: 24px solid transparent;
+        border-radius: 0 50px 50px 0;
+        background-color: #5d6872;
         position: absolute;
-        height: 0;
-        width: 0;
+        width: 48px;
+        bottom: 0;
         right: 0;
+        top: 0;
     }
 
     .frame {
