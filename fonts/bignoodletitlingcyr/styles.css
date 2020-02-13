@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'BigNoodleTitlingCyr';
+  src: 
+  url('https://sashatravkina.github.io/static/fonts/bignoodletitlingcyr/BigNoodleTitlingCyr.eot?#iefix') format('embedded-opentype'),
+  url('https://sashatravkina.github.io/static/fonts/bignoodletitlingcyr/BigNoodleTitlingCyr.woff') format('woff'),
+  url('https://sashatravkina.github.io/static/fonts/bignoodletitlingcyr/BigNoodleTitlingCyr.ttf') format('truetype'),
+  url('https://sashatravkina.github.io/static/fonts/bignoodletitlingcyr/BigNoodleTitlingCyr.svg#BigNoodleTitlingCyr') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
