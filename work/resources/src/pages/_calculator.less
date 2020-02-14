@@ -133,7 +133,12 @@
                     }
                 }
 
-                .digital-protect__img {        
+                .digital-protect__img {
+
+                    @media @md {
+                        min-height: 56px;
+                    }
+                    
                     .js-img {
                         transition: opacity 0.3s ease-out, height 1s step-end;
                         overflow: hidden;
