@@ -94,7 +94,7 @@ $(document).ready(function() {
                     e.nextElementSibling.querySelector(".label-timer").style.width = "0%"
                 }
             });
-            e.checked = !0, document.querySelector(`[data-id='${e.dataset.id}']`).classList.add("js-img_active"), animate({
+            e.checked = !0, document.querySelector(`div[data-id='${e.dataset.id}']`).classList.add("js-img_active"), animate({
                 duration: 6e3,
                 draw(t) {
                     e.nextElementSibling.querySelector(".label-timer").style.width = 100 * t + "%"
