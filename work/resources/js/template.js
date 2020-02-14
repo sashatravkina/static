@@ -94,7 +94,7 @@ $(document).ready(function() {
                     e.nextElementSibling.querySelector(".label-timer").style.width = "0%"
                 }
             });
-            e.checked = !0, document.querySelector(`img[data-id='${e.dataset.id}']`).classList.add("js-img_active"), animate({
+            e.checked = !0, document.querySelector(`[data-id='${e.dataset.id}']`).classList.add("js-img_active"), animate({
                 duration: 6e3,
                 draw(t) {
                     e.nextElementSibling.querySelector(".label-timer").style.width = 100 * t + "%"
@@ -220,6 +220,36 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() { 
+    $(".calculator-2 .head .bth-ruble").click(function() {
+        $('.calculator-2 .head .bth-ruble').addClass("active");
+        $('.calculator-2 .head .bth-dollar').removeClass("active");
+    });
+
+    $(".calculator-2 .head .bth-dollar").click(function() {
+        $('.calculator-2 .head .bth-dollar').addClass("active");
+        $('.calculator-2 .head .bth-ruble').removeClass("active");
+    });
+});
+
+$(document).ready(function() { 
+    $(".calculator-3 .head .bth-hour").click(function() {
+        $('.calculator-3 .head .bth-hour').addClass("active");
+        $('.calculator-3 .slider-hour').addClass("active");
+
+        $('.calculator-3 .head .bth-day').removeClass("active");
+        $('.calculator-3 .slider-day').removeClass("active");
+    });
+
+    $(".calculator-3 .head .bth-day").click(function() {
+        $('.calculator-3 .head .bth-day').addClass("active");
+        $('.calculator-3 .slider-day').addClass("active");
+
+        $('.calculator-3 .head .bth-hour').removeClass("active");
+        $('.calculator-3 .slider-hour').removeClass("active");
+    });
+});
+
+$(document).ready(function() { 
     $('#verticalCarousel1').carousel({
         interval: 3000  
     })
@@ -236,3 +266,78 @@ function copyToClipboard(element) {
     document.execCommand("copy");
     $temp.remove();
 };
+
+$(document).ready(function() {
+    slider = $('.slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        centerMode: false,
+        centerPadding: '0',
+        speed: 300,
+        cssEase: 'ease',
+        draggable: true,
+        easing: 'linear',
+        respondTo: 'window',
+        slidesToShow: 1,
+        swipeToSlide: true,
+        variableWidth: true,
+        focusOnChange: false,
+        focusOnSelect: true
+    });
+
+    $('input[type="number"]').focus(function () {
+        console.log('in');
+        slider.slick("slickSetOption", "draggable", "focusOnSelect", "focusOnChange", "swipeToSlide", false, false, false, false, false);
+    }).blur(function () {
+        console.log('out');
+        slider.slick("slickSetOption", "draggable", "focusOnSelect", "focusOnChange", "swipeToSlide", true, false, false, false, false);
+    });
+});
+
+$(document).ready(function() {
+    $.fn.textWidth = function(text, font) {
+        if (!$.fn.textWidth.fakeEl) $.fn.textWidth.fakeEl = $('<span>').hide().appendTo(document.body);
+        $.fn.textWidth.fakeEl.text(text || this.val() || this.text() || this.attr('placeholder')).css('font', font || this.css('font'));
+        return $.fn.textWidth.fakeEl.width();
+    };
+
+    $('.number').on('input', function() {
+        var inputWidth = $(this).textWidth();
+        $(this).css({
+            width: inputWidth
+        })
+    }).trigger('input');
+
+    function inputWidth(elem, minW, maxW) {
+        elem = $(this);
+        console.log(elem)
+    }
+
+    var targetElem = $('.number');
+
+    inputWidth(targetElem);
+});
+
+$(document).ready(function() {
+    Number.prototype.between  = function (a, b, inclusive) {
+        var min = Math.min.apply(Math, [a,b]),
+            max = Math.max.apply(Math, [a,b]);
+        return inclusive ? this >= min && this <= max : this > min && this < max;
+    };
+ 
+    $('.number.cash').keydown(function(event){
+        var v = parseFloat(this.value + String.fromCharCode(event.which));
+        return parseFloat(v).between(1, 999, true);
+    });
+
+    $('.number.hour').keydown(function(event){
+        var v = parseFloat(this.value + String.fromCharCode(event.which));
+        return parseFloat(v).between(1, 24, true);
+    });
+
+    $('.number.day').keydown(function(event){
+        var v = parseFloat(this.value + String.fromCharCode(event.which));
+        return parseFloat(v).between(1, 31, true);
+    });
+});
