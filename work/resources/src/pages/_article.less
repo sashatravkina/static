@@ -258,6 +258,11 @@
             &.first {
                 margin-top: 0;
             }
+            &.fix {
+                h2 {
+                    margin-top: -9px;
+                }
+            }
         }
 
         a {
@@ -344,7 +349,11 @@
                     margin: 0;
 
                     li {
-                        margin-right: 24px;
+                        margin-right: 14px;
+
+                        @media @sm {
+                            margin-right: 24px;
+                        }
                         float: left;
 
                         a {
