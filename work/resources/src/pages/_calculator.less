@@ -830,8 +830,8 @@
     &.active {
         visibility: visible;
         opacity: initial;
-        height: auto;
-        width: auto;
+        height: initial;
+        width: initial;
     }
 
 }
@@ -839,6 +839,13 @@
     visibility: hidden;
     position: relative;
     overflow: hidden;
-    opacity: 0;
     height: 0;
+    opacity: 0;
+
+    &.active {
+        height: 109px !important;
+    }
+    &.slider-what {
+        height: 62px;
+    }
 }
