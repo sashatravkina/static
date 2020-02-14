@@ -473,7 +473,21 @@
                 }
             }
 
-            &:hover,
+            &:hover {
+                background-color: @color2;
+
+                svg {
+                    fill: @color4;
+                }
+
+                @media @md {
+                    background-color: transparent;
+
+                    svg {
+                        fill: @color1;
+                    }
+                }
+            }
             &.active {
                 background-color: @color2;
 
@@ -538,7 +552,15 @@
                 background-color: transparent;
             }
 
-            &:hover,
+            &:hover {
+                background-color: @color9;
+                color: @color4;
+
+                @media @md {
+                    background-color: transparent;
+                    color: @color1;
+                }
+            }
             &.active {
                 background-color: @color9;
                 color: @color4;
@@ -776,7 +798,7 @@
                 cursor: pointer;
 
                 max-width: 150px;
-                min-width: 50px;
+                min-width: 70px;
 
                 padding: 0;
                 margin: 0;
@@ -835,13 +857,21 @@
     visibility: hidden;
     position: relative;
     overflow: hidden;
-    height: 0;
     opacity: 0;
+    height: 0;
 
-    &.active {
-        height: 109px !important;
-    }
     &.slider-what {
         height: 62px;
+    }
+
+    &.slider-cash {
+        height: 109px;
+    }
+
+    &.slider-hour,
+    &.slider-day {
+        &.active {
+            height: 109px;
+        }
     }
 }
