@@ -305,7 +305,7 @@ $(document).ready(function() {
     $('.number').on('input', function() {
         var inputWidth = $(this).textWidth();
         $(this).css({
-            width: inputWidth
+            width: inputWidth + 10
         })
     }).trigger('input');
 
