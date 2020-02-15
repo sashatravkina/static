@@ -148,7 +148,10 @@ $(document).ready(function() {
         
         setTimeout(function(){
             btndom.removeClass("loading-start").removeAttr("disabled");
-            btndom.addClass("loading-end");
+            btndom.addClass("loading-end").delay(5000).queue(function(next) {
+                $(this).removeClass("loading-end");
+                next();
+            });
         }, 3000);
     });
 });
