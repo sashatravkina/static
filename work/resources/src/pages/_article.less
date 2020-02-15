@@ -945,6 +945,7 @@
             }
         }
         .scrolled-body {
+            -webkit-overflow-scrolling: touch;
             -ms-overflow-style: none;
             scrollbar-width: none;
             white-space: nowrap;
@@ -956,8 +957,9 @@
 
             &::-webkit-scrollbar {
                 width: 0 !important;
+                display: none;
             }
-
+            
             @media @md {
                 pointer-events: none;
             }
