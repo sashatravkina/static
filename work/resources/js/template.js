@@ -143,10 +143,12 @@ $(document).ready(function() {
     $(".load-button").on("click",function(){
         var btndom = $(this);
             btndom.addClass("loading-start");
-            btndom.attr("disabled",true);
+            btndom.attr("disabled", true);
+            btndom.removeClass("loading-end");
         
         setTimeout(function(){
             btndom.removeClass("loading-start").removeAttr("disabled");
+            btndom.addClass("loading-end");
         }, 3000);
     });
 });

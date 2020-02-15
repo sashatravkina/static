@@ -483,6 +483,16 @@ input[type=number] {
                 }
             }
 
+            .end {
+                transition: 1s ease;
+                display: none;
+                opacity: 0;
+
+                span {
+                    color: @color4;
+                }
+            }
+
             .loader {
                 transition: 1s ease;
                 -webkit-animation: spin 1s linear infinite;
@@ -528,6 +538,19 @@ input[type=number] {
 
                 &.loading-start { 
                     background-color: @color17 !important;
+                }
+            }
+
+            &.loading-end {
+                background-color: @color25 !important;
+
+                .text {
+                    display: none;
+                    opacity: 0;
+                }
+                .end {
+                    display: block;
+                    opacity: 1;
                 }
             }
         }
@@ -585,8 +608,8 @@ input[type=number] {
                     -webkit-transform: rotate(-45deg);
                     transform: rotate(-45deg);
                     height: 6px;
-                    width: 12px;
-                    left: 6px;
+                    width: 10px;
+                    left: 8px;
                     top: 7px;
                 }
             }
