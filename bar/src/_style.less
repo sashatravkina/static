@@ -81,13 +81,23 @@ body {
     }
 
     .star {
-        background: radial-gradient(ellipse at bottom, #090a0f 0%, #090a0f 100%);
+        background-image: url('../images/bg.jpg');
         position: absolute;
         overflow: hidden;
         bottom: -20px;
         right: -20px;
         left: -20px;
         top: -20px;
+
+        &::before {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
 
         #stars {
             width: 1px;
