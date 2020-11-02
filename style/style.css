@@ -73,6 +73,28 @@ body {
     top: 0;
 }
 
+.copyright {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 36px;
+    right: calc(15px + 1rem);
+    top: 15px;
+}
+.copyright p {
+    margin-bottom: 0;
+    margin-top: 0;
+
+    font-family: 'Klein', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+
+    opacity: 0.4;
+    
+    color: rgb(255, 255, 255);
+}
+
 @font-face {
     font-family: 'Klein';
     src: url('../fonts/klein/Klein-ExtraLightItalic.eot');
