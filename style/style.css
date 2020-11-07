@@ -40,7 +40,7 @@ body {
     font-style: inherit;
     color: transparent;
 }
-.wrap-video {
+.wrap-frame {
     position: absolute;
     z-index: -10;
     bottom: 0;
@@ -48,10 +48,10 @@ body {
     left: 0;
     top: 0;
 }
-.wrap-video .video {
+.wrap-frame .vignette {
     padding-bottom: 56.25%;
 }
-.wrap-video .video::after {
+.wrap-frame .vignette::after {
     content: '';
     position: absolute;
     bottom: 0; 
@@ -63,7 +63,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.wrap-video .video video {
+.wrap-frame .vignette video {
     position: absolute;
     height: 100%;
     width: 100%;
